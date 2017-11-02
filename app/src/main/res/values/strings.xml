@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Application Study</string>
+    <string name="SQlite">SQlite Application Study</string>
+    <string name="onCreateDataBase">onCreateDataBase</string>
+    <string name="onCreatTable">onCreatTable</string>
+    <string name="write">write</string>
+    <string name="insert">insert</string>
+    <string name="query">query</string>
+    <string name="XML_Parser">XML Parser</string>
+    <string name="update">update</string>
+    <string name="delete">delete_table</string>
+    <string name="down_file">file</string>
+    <string name="down_other">other</string>
+</resources>

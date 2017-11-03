@@ -21,7 +21,7 @@
         android:ellipsize="marquee"
         android:gravity="center"
         android:singleLine="true"
-        android:text="@string/XML_Parser"
+        android:text="@string/download_title"
         android:textColor="@drawable/color"
         android:textSize="40dp" />
 
@@ -30,13 +30,12 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="@drawable/textview_select"
-        android:text="@string/onCreateDataBase" />
+        android:text="@string/down_file" />
 
     <Button
         android:id="@+id/FULL"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/onCreatTable" />
+        android:text="@string/down_other" />
 </LinearLayout>

@@ -11,4 +11,5 @@
     <string name="delete">delete_table</string>
     <string name="down_file">file</string>
     <string name="down_other">other</string>
+    <string name="download_title">DownLoad In NertWork</string>
 </resources>

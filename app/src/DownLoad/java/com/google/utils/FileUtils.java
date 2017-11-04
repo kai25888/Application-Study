@@ -1,7 +1,5 @@
 package com.google.utils;
 
-import android.os.Environment;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -12,13 +10,13 @@ import java.io.OutputStream;
  * Created by tiankai on 2017/11/3.
  */
 public class FileUtils {
-    private String SDPATH;
+    private String SDPATH = "/mnt/shell/emulated/0/Download/";
 
     /**
      * 返回SDcard路径
      */
     public void FileUtils() {
-        SDPATH = Environment.getExternalStorageDirectory() + "/";
+        SDPATH = "/mnt/shell/emulated/0/Download/";
     }
 
     public String getSDPATH() {
@@ -48,7 +46,7 @@ public class FileUtils {
      */
     public boolean isFileExist(String fileName) {
         File file = new File(SDPATH + fileName);
-        Boolean bl =  file.exists();
+        Boolean bl = file.exists();
         return bl;
     }
 
@@ -61,7 +59,8 @@ public class FileUtils {
         try {
             creatSDDir(path);
             file = creatSDFile(path + fileName);
-            outputStream = new FileOutputStream(file);
+            if (file != null)
+                outputStream = new FileOutputStream(file);
             byte buffer[] = new byte[4 * 1024];
             while (input.read(buffer) != -1) {
                 outputStream.write(buffer);
@@ -69,7 +68,7 @@ public class FileUtils {
             outputStream.flush();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 outputStream.close();
             } catch (IOException e) {

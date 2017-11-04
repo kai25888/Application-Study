@@ -43,7 +43,7 @@ public class HttpDownLoad {
         InputStream inputStream = null;
         try {
             FileUtils fileUtils = new FileUtils();
-
+            System.out.println(fileUtils.getSDPATH());
             if (fileUtils.isFileExist(path + fileName)) {
                 return 1;
             } else {
@@ -57,11 +57,11 @@ public class HttpDownLoad {
             e.printStackTrace();
             return -1;
         }finally {
-            try {
-                inputStream.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                inputStream.close();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
         }
         return 0;
     }

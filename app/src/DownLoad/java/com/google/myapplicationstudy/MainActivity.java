@@ -28,14 +28,18 @@ public class MainActivity extends Activity {
 
     @OnClick(R.id.down_file)
     public void onDownFileClicked() {
+        Thread thread = new Thread(runnable1);
+        thread.start();
 //        runnable1.run();
-        thread1.start();
+//        thread1.start();
     }
 
     @OnClick(R.id.down_other)
     public void onDownOtherClicked() {
+        Thread thread = new Thread(runnable2);
+        thread.start();
 //        runnable2.run();
-        thread2.start();
+//        thread2.start();
     }
 
     Thread thread1 = new Thread(new Runnable() {

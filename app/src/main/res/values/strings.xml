@@ -12,4 +12,7 @@
     <string name="down_file">file</string>
     <string name="down_other">other</string>
     <string name="download_title">DownLoad In NertWork</string>
+    <string name="begin">begin</string>
+    <string name="end">end</string>
+    <string name="handler">Handler</string>
 </resources>

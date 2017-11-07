@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
     @Bind(R.id.manual_unregister)
     Button manualUnregister;
 
-    public final static String EXTRA_MESSAGE = "\"android.intent.action.MESSAGE";
+    public final static String SMS_ACTION  = "android.provider.Telephony.SMS_RECEIVED";
     private BroadcastReceiver_Manual br_manaul;
 
     @Override
@@ -48,7 +48,8 @@ public class MainActivity extends Activity {
     @OnClick(R.id.manual_register)
     public void onManualRegisterClicked() {
         br_manaul = new BroadcastReceiver_Manual();
-        IntentFilter intentfilter = new IntentFilter(EXTRA_MESSAGE);
+        IntentFilter intentfilter = new IntentFilter();
+        intentfilter.addAction(SMS_ACTION);
         this.registerReceiver(br_manaul,intentfilter);
     }
 

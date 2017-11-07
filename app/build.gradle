@@ -38,7 +38,21 @@ android {
             versionCode 1
             versionName '1.0'
         }
+        ContentProvide {
+            minSdkVersion 19
+            applicationId 'com.google.myapplicationstudy'
+            targetSdkVersion 25
+            versionCode 1
+            versionName '1.0'
+        }
         Handler {
+            minSdkVersion 19
+            applicationId 'com.google.myapplicationstudy'
+            targetSdkVersion 25
+            versionCode 1
+            versionName '1.0'
+        }
+        BroadcastReceiver {
             minSdkVersion 19
             applicationId 'com.google.myapplicationstudy'
             targetSdkVersion 25

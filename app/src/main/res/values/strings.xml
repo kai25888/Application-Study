@@ -15,4 +15,11 @@
     <string name="begin">begin</string>
     <string name="end">end</string>
     <string name="handler">Handler</string>
+    <string name="ContentProvide">ConctentProvide</string>
+    <string name="BroadcastReceive">BroadcastReceiver</string>
+    <string name="registerBroadcast">registerBroadcast</string>
+    <string name="unregisterBroadcast">unregisterBroadcast</string>
+    <string name="auto_registerBroadcast">auto_registerBroadcast</string>
+    <string name="manual_registerBroadcast">manual_registerBroadcast</string>
+    <string name="manual_unregisterBroadcast">manual_unregisterBroadcast</string>
 </resources>

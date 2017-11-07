@@ -23,7 +23,7 @@
         android:singleLine="true"
         android:text="@string/download_title"
         android:textColor="@drawable/color"
-        android:textSize="40dp" />
+        android:textSize="40sp" />
 
     <Button
         android:id="@+id/SAX"

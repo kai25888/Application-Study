@@ -61,6 +61,7 @@ public class MainActivity extends Activity {
 
     @OnClick(R.id.insert)
     public void onInsertClicked() {
+        long rowid;
         title.setText("Insert");
         System.out.println("insert");
         dataBaseHelper = new DataBaseHelper(this, "mydata_base");
@@ -68,16 +69,20 @@ public class MainActivity extends Activity {
         contentValues = new ContentValues();
         contentValues.put("id", 1);
         contentValues.put("name", "张三");
-        sqLiteDatabase.insert("user", null, contentValues);
+        rowid = sqLiteDatabase.insert("user", null, contentValues);
+        System.out.println("SQliteDataBase insert rowid = " + rowid);
         contentValues.put("id", 2);
         contentValues.put("name", "李四");
-        sqLiteDatabase.insert("user", null, contentValues);
+        rowid = sqLiteDatabase.insert("user", null, contentValues);
+        System.out.println("SQliteDataBase insert rowid = " + rowid);
         contentValues.put("id", 3);
         contentValues.put("name", "朱七");
-        sqLiteDatabase.insert("user", null, contentValues);
+        rowid = sqLiteDatabase.insert("user", null, contentValues);
+        System.out.println("SQliteDataBase insert rowid = " + rowid);
         contentValues.put("id", 4);
         contentValues.put("name", "陈八");
-        sqLiteDatabase.insert("user", null, contentValues);
+        rowid = sqLiteDatabase.insert("user", null, contentValues);
+        System.out.println("SQliteDataBase insert rowid = " + rowid);
     }
 
     @OnClick(R.id.delete)

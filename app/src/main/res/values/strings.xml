@@ -22,4 +22,8 @@
     <string name="auto_registerBroadcast">auto_registerBroadcast</string>
     <string name="manual_registerBroadcast">manual_registerBroadcast</string>
     <string name="manual_unregisterBroadcast">manual_unregisterBroadcast</string>
+    <string name="enable_wifi">enable_wifi</string>
+    <string name="stop_wifi">stop_wifi</string>
+    <string name="getwifistatus">getwifistatus</string>
+    <string name="wifi_manager">WiFi Manager</string>
 </resources>

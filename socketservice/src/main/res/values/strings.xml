@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SocketService</string>
+    <string name="socket_service">socket_service</string>
+    <string name="Socket_TCP">Socket_TCP</string>
+    <string name="Socket_UDP">Socket_UDP</string>
+</resources>

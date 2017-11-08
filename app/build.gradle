@@ -59,6 +59,20 @@ android {
             versionCode 1
             versionName '1.0'
         }
+        WiFiManager {
+            minSdkVersion 19
+            applicationId 'com.google.myapplicationstudy'
+            targetSdkVersion 25
+            versionCode 1
+            versionName '1.0'
+        }
+        SocketClient {
+            minSdkVersion 19
+            applicationId 'com.google.myapplicationstudy'
+            targetSdkVersion 25
+            versionCode 1
+            versionName '1.0'
+        }
     }
 }
 
